@@ -347,6 +347,12 @@ src_libdrivers_la_SOURCES += \
 	src/hardware/dreamsourcelab-dslogic/protocol.c \
 	src/hardware/dreamsourcelab-dslogic/api.c
 endif
+if HW_ESP32_OSCILLOSCOPE
+src_libdrivers_la_SOURCES += \
+	src/hardware/esp32-oscilloscope/protocol.h \
+	src/hardware/esp32-oscilloscope/protocol.c \
+	src/hardware/esp32-oscilloscope/api.c
+endif
 if HW_FLUKE_45
 src_libdrivers_la_SOURCES += \
 	src/hardware/fluke-45/protocol.h \
